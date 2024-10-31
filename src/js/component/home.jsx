@@ -5,15 +5,15 @@ const Home = () => {
 	const [color, setColor] = useState(" ");
 	console.log(color);
 	return (
-		<div className="container text-center bg-dark">
-			<div onClick={() => setColor("red")} className="Red">
-				<button type="button" className={"btn btn-danger" + " " + (color === "red" ? "sombra" : "")}></button>
+		<div className="container text-center bg-dark rounded">
+			<div onClick={() => setColor("red")} className="Figuras">
+				<button type="button" className={"btn btn-danger mt-4" + " " + (color === "red" ? "sombraRed" : "")}></button>
 			</div>
-			<div onClick={() => setColor("yellow")}>
-				<button type="button" className={"btn btn-warning" + " " + (color === "yellow" ? "sombra" : " ")}>Warning</button>
+			<div onClick={() => setColor("yellow")} className="Figuras">
+				<button type="button" className={"btn btn-warning mt-4" + " " + (color === "yellow" ? "sombraYellow" : " ")}></button>
 			</div>
-			<div onClick={() => setColor("green")}>
-				<button type="button" className={"btn btn-success" + " " + (color === "green" ? "sombra" : " ")}>Success</button>
+			<div onClick={() => setColor("green")} className="Figuras">
+				<button type="button" className={"btn btn-success mt-4" + " " + (color === "green" ? "sombraGreen" : " ")}></button>
 			</div>
 		</div>
 	);
