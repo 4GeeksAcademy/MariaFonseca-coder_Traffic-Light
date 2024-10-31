@@ -5,9 +5,9 @@ const Home = () => {
 	const [color, setColor] = useState(" ");
 	console.log(color);
 	return (
-		<div className="text-center">
-			<div onClick={() => setColor("red")}>
-				<button type="button" className={"btn btn-danger" + " " + (color === "red" ? "sombra" : " ")}>Danger</button>
+		<div className="container text-center bg-dark">
+			<div onClick={() => setColor("red")} className="Red">
+				<button type="button" className={"btn btn-danger" + " " + (color === "red" ? "sombra" : "")}></button>
 			</div>
 			<div onClick={() => setColor("yellow")}>
 				<button type="button" className={"btn btn-warning" + " " + (color === "yellow" ? "sombra" : " ")}>Warning</button>
