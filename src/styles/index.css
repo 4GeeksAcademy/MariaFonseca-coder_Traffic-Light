@@ -5,8 +5,9 @@
 .rectangulo{
     width: 10px;
     height: 85px;
-    margin-left: 706px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sombraRed {
